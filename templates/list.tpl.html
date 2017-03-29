@@ -1,0 +1,12 @@
+
+<div class="col-sm-6 col-md-3"  ng-repeat="item in bookList">
+    <div class="thumbnail">
+        <img src="{{item.img}}" alt="">
+        <div class="caption" >
+            <h5>{{item.name}}</h5>
+            <p>销量:{{item.sale}}</p>
+            <p><a href="#/detail/{{item.id}}" class="btn btn-primary btn-sm" role="button">查看详情</a></p>
+        </div>
+    </div>
+</div>
+

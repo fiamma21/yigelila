@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../static/components/bootstrap/dist/css/bootstrap.min.css"/>
+
+</head>
+<body ng-controller="myctr">
+<div class="container">
+<span class="btn btn-primary" ng-click="getData()"> </span>
+
+</div>
+<script src="../static/components/angular/angular.js"></script>
+<script>
+    var app=angular.module('myapp',[]);
+    app.controller('myctr',['$scope','$http',function($scope,$http){
+            $scope.getData=function(){
+                $http({
+                    url:
+                })
+            }
+    }])
+</script>
+</body>
+</html>

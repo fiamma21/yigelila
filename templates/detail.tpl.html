@@ -1,0 +1,15 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 ">
+            <div class="thumbnail">
+                <img src="{{bookInfo.img}}">
+                <div class="caption">
+                    <h3 class="text-center">{{bookInfo.name}}</h3>
+                    <p class="text-center">销量:{{bookInfo.sale}}</p>
+                    <p class="text-center"><a href="#/detail/{{bookInfo.id}}" class="btn btn-primary btn-sm" role="button" ng-click="flag=!flag">点击查看价格</a></p><h4 class="text-center" ng-show="flag==true">${{bookInfo.price}}</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
